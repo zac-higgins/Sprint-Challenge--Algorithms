@@ -101,30 +101,24 @@ class SortingRobot:
         # while light is on
         while self.light_is_on():
         #   turn light off
-            # self.set_light_off()
-        #   Pick up first item in list
-            # self.swap_item()
-        #   for loop through the list
-            # for i in range(1, len(self._list) -1):
-                # if self.can_move_left is False:
-            def compare():
-                self.swap_item()
-                self.move_right()
-                if self.compare_item() == 1:
-        #           swap
-                    self.swap_item()
-                    self.move_left()
-                    self.swap_item()
-        #           turn light on
-                    self.set_light_on()
-                elif self.compare_item() == -1:
-                    self.move_left()
-                    self.swap_item()
-                    self.move_right()
-                    compare()
-
             self.set_light_off()
-            compare()
+        #   for loop through the list
+            for i in range(1, len(self._list) -1):
+                #Pick up first item in list
+                self.swap_item()
+                #move right
+                self.move_right()
+                #compare
+                if self.compare_item() == 1:
+                    #swap
+                    self.swap_item()
+                    #turn light on
+                    self.set_light_on
+                elif self.compare_item() is None:
+                    # self.swap_item()
+                    self.set_light_off()
+        # ------ basically trying to bubble sort but with the robot commands, wasn't able to get it -----#
+
 
         return
 
