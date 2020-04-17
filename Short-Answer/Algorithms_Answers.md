@@ -3,10 +3,10 @@
 ## Exercise I
 
 a)
-Answer: O(n^3)
+Answer: O(n)
 
 b)
-Answer : O(n^2)
+Answer : O(n log n)
 
 c)
 Answer: O(n)
@@ -29,4 +29,4 @@ for story in building:
         continue through loop
 
 Runtime:
-O(n^3)
+O(n)
